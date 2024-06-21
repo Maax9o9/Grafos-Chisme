@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chisme</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Chisme</h1>
+        <div class="controls">
+            <input type="text" id="vertexInput" placeholder="Nombre de la persona">
+            <button id="addVertex">Añadir Persona</button>
+            <br>
+            <input type="text" id="fromInput" placeholder="De (persona)">
+            <input type="text" id="toInput" placeholder="A (persona)">
+            <button id="addEdge">Añadir Chisme</button>
+        </div>
+        <div class="graph-view" id="graphView"></div>
+        <div class="shortest-path">
+            <input type="text" id="startVertex" placeholder="Inicio">
+            <input type="text" id="endVertex" placeholder="Fin">
+            <button id="findShortestPath">Camino Mínimo</button>
+            <p id="pathOutput"></p>
+        </div>
+    </div>
+    <script type="module" src="./src/scripts/Scripts.mjs"></script>
+</body>
+</html>
